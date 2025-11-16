@@ -26,6 +26,16 @@ This project explores linear regression techniques to predict Titanic passenger 
 
 ## Key Findings
 
+### Model Comparison 
+| Model Type | Case | Features Used | R² | RMSE ($) | MAE ($) | Notes |
+|------------|------|---------------|-----|----------|---------|-------|
+| Linear Regression | Case 4 | pclass_survival + family_size | 0.193 | 34.17 | 22.82 | Baseline model |
+| Ridge Regression | Case 4 | pclass_survival + family_size | 0.193 | 34.16 | 22.81 | Minimal regularization benefit |
+| Elastic Net | Case 4 | pclass_survival + family_size | 0.217 | 33.66 | 22.12 | Slight improvement over linear |
+| Polynomial (degree=3) | Case 4 | pclass_survival + family_size | 0.425 | 28.84 | 15.58 | **Best performing - 2 features** |
+| Polynomial (degree=3) | Single Feature | pclass_survival only | 0.240 | 34.30 | 20.98 | Single feature comparison |
+| Polynomial (degree=7) | Single Feature | pclass_survival only | 0.240 | 34.30 | 20.98 | No improvement over degree=3 |
+
 ### Best Model Performance
 - **Polynomial Regression (degree=3)** achieved the best results:
   - R²: 0.425
