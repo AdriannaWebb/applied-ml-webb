@@ -65,12 +65,12 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Project 01: 
-      - Overview: //project01/ml01.ipynb
+      - Overview: project01/README.md
   - Project 02:
-      - Overview: /project02/README.md
+      - Overview: project02/README.md
   - Project 03:
-      - Overview: //project03/README.md
+      - Overview: project03/README.md
   - Midterm 04:
-      - Overview: //midterm-04/README.md
+      - Overview: midterm-04/README.md
   - Project 04:
-      - Overview: //project04/README.md
+      - Overview: project04/README.md
