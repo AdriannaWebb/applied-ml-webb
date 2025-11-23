@@ -57,17 +57,17 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - Project 01: 
+  - Project 01 (Regression): 
       - Overview: project01/README.md
-  - Project 02:
+  - Project 02 (Titanic EDA):
       - Overview: project02/README.md
-  - Project 03:
+  - Project 03 (Classification):
       - Overview: project03/README.md
-  - Midterm (Project 04):
+  - Midterm (Mushroom):
       - Overview: midterm-04/README.md
-  - Project 04 (Linear Regression):
+  - Project 04 (Fare Prediction):
       - Overview: project04/README.md
-  - Project 05:
+  - Project 05 (Ensemble ML):
       - Overview: project05/README.md
 ```
 
