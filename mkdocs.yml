@@ -1,11 +1,4 @@
 # mkdocs.yml
-# Configuration file for MkDocs (Automated project documentation generator)
-
-# TODO: Change denisecase to your GitHub username (use CTRL F to find all instances)
-# TODO: Change applied-ml-template to your repository name (use CTRL F to find all instances)
-# TODO: Update site_description
-# TODO: Update site_author
-
 site_name: Applied ML Project
 site_url: https://adriannawebb.github.io/applied-ml-webb/
 repo_url: https://github.com/AdriannaWebb/applied-ml-webb
@@ -18,15 +11,15 @@ theme:
   name: material
   features:
     - navigation.expand
-    - navigation.sections # Group navigation items
-    - navigation.top # Back-to-top button
-    - search.suggest # Search suggestions as you type
-    - search.highlight # Highlight search terms
-    - content.code.copy # Copy button on code blocks
-    - toc.follow # Highlight current section in TOC
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - toc.follow
 
   palette:
-    - scheme: default # Light/dark mode toggle
+    - scheme: default
       primary: indigo
       accent: indigo
       toggle:
@@ -46,21 +39,21 @@ plugins:
         python:
           options:
             show_source: true
-            show_root_heading: true # Include module names
-            show_root_toc_entry: true # Include module in TOC
-            docstring_style: google # Professional docstring format
+            show_root_heading: true
+            show_root_toc_entry: true
+            docstring_style: google
             show_signature_annotations: true
-            separate_signature: true    # Makes function signatures easier to read
+            separate_signature: true
 
 markdown_extensions:
-  - admonition # Note/Warning/Tip boxes
-  - codehilite # Syntax highlighting
-  - tables # Markdown tables
+  - admonition
+  - codehilite
+  - tables
   - toc:
-      permalink: true # Clickable headers
+      permalink: true
       toc_depth: 3
-  - pymdownx.superfences # Code blocks with syntax highlighting
-  - pymdownx.details # Collapsible sections
+  - pymdownx.superfences
+  - pymdownx.details
 
 nav:
   - Home: index.md
@@ -70,7 +63,29 @@ nav:
       - Overview: project02/README.md
   - Project 03:
       - Overview: project03/README.md
-  - Midterm 04:
+  - Midterm (Project 04):
       - Overview: midterm-04/README.md
-  - Project 04:
+  - Project 04 (Linear Regression):
       - Overview: project04/README.md
+  - Project 05:
+      - Overview: project05/README.md
+```
+
+## Additional Recommendations
+
+1. **Verify File Paths**: Make sure all README files actually exist at the paths specified in the nav section:
+```
+   docs/
+   ├── index.md
+   ├── project01/
+   │   └── README.md
+   ├── project02/
+   │   └── README.md
+   ├── project03/
+   │   └── README.md
+   ├── midterm-04/
+   │   └── README.md
+   ├── project04/
+   │   └── README.md
+   └── project05/
+       └── README.md
